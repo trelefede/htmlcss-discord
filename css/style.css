@@ -210,7 +210,35 @@ main {
 /* footer */
 
 .footer {
+    display: flex;
     background-color: #23272a;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 80px;
 }
 
-.pre-footer {}
+.pre-footer {
+    justify-content: space-between;
+    margin-bottom: 40px;
+    line-height: 30px;
+    color: white;
+}
+
+.link-footer ul {
+    list-style-type: none;
+}
+
+.link-footer {
+    flex-grow: 1;
+    justify-content: space-around;
+    padding: 0px 70px;
+}
+
+.fine-footer {
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+#footer-titoli {
+    color: #6f86d4;
+}
