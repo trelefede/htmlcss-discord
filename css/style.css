@@ -9,11 +9,18 @@
 body {
     font-family: sans-serif;
     font-size: 18px;
-    line-height: 1, 2rem;
+    line-height: 1.2rem;
+}
+
+img {
+    width: 100%;
 }
 
 /*** utilities ***/
 
+.flex {
+    display: flex;
+}
 
 
 /*** content ***/
@@ -27,36 +34,53 @@ body {
 /* header */
 
 header {
-    margin: 0 100px;
+    background-image: url('../images/jumbo.png');
+    background-size: cover;
 }
 
 /* menu navigazione */
 
 .contenitore-nav {
     display: flex;
-    background-color: #3161e0;
     color: white;
-    border: 1px solid red;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
 }
 
 
-nav {
-    height: 20px;
+nav ul {
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    padding: 10px;
 }
 
 .logo {
-    flex-basis: 100px;
-    margin-left: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .link-vari {
-    flex-grow: 1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
 }
 
 .accedi {
-    flex-basis: 100px;
-    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: none;
 }
 
 /* contenuto intestazione */
@@ -65,16 +89,36 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #3161e0;
     color: white;
-    border: 1px solid red;
     padding: 60px 200px 60px 200px;
+}
+
+.contenitore-intestazione h1 {
+    margin-bottom: 33px;
+}
+
+.contenitore-intestazione p {
+    line-height: 25px;
+    font-size: 1rem;
+    margin: 0 27px;
 }
 
 .bottoni-intestazione {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 20px;
+}
+
+.accedi-scuro {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #23272a;
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 30px;
 }
 
 /* fine header */
@@ -94,10 +138,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
     justify-content: center;
-    border: 1px solid red;
-    margin: 0 100px;
 }
 
 .contenitore-contenuto1 {
@@ -121,10 +162,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
     justify-content: center;
-    border: 1px solid red;
-    margin: 0 100px;
 }
 
 
@@ -136,7 +174,6 @@ main {
 .footer {
     background-color: #23272a;
     height: 350px;
-    margin: 0 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,10 +182,8 @@ main {
 
 .pre-footer {
     display: flex;
-    border: 1px solid red;
     flex-direction: row;
     justify-content: center;
     height: 250px;
     align-items: center;
 }
-
