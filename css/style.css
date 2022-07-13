@@ -1,0 +1,154 @@
+/*** generics ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1, 2rem;
+}
+
+/*** utilities ***/
+
+
+
+/*** content ***/
+
+.contenitore {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header */
+
+header {
+    margin: 0 100px;
+}
+
+/* menu navigazione */
+
+.contenitore-nav {
+    display: flex;
+    background-color: #3161e0;
+    color: white;
+    border: 1px solid red;
+}
+
+
+nav {
+    height: 20px;
+}
+
+.logo {
+    flex-basis: 100px;
+    margin-left: 100px;
+}
+
+.link-vari {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.accedi {
+    flex-basis: 100px;
+    margin-right: 100px;
+}
+
+/* contenuto intestazione */
+
+.contenitore-intestazione {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #3161e0;
+    color: white;
+    border: 1px solid red;
+    padding: 60px 200px 60px 200px;
+}
+
+.bottoni-intestazione {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* fine header */
+
+
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* contenuto base */
+
+.contenuto-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    justify-content: center;
+    border: 1px solid red;
+    margin: 0 100px;
+}
+
+.contenitore-contenuto1 {
+    display: flex;
+    text-align: center;
+}
+
+#img-content {
+    margin: 0 20px 0 130px;
+}
+
+.didascalia-verticale {
+    margin: 0 100px 0 30px;
+}
+
+
+/* contenuto diverso */
+
+.contenuto-diverso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    justify-content: center;
+    border: 1px solid red;
+    margin: 0 100px;
+}
+
+
+/* end main */
+
+
+/* footer */
+
+.footer {
+    background-color: #23272a;
+    height: 350px;
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre-footer {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+}
+
